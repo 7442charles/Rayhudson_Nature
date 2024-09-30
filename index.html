@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rayhudson Nature's Bounty</title>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="Assets/css/styles.css">
 </head>
@@ -176,46 +177,66 @@
     </section>
     <!-- End Farm Produce Section -->
 
-        <!-- mission section -->
-        <section class="py-12 bg-gray-100">
-            <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left px-4">
-                <!-- Our Mission -->
-                <div>
-                    <h2 class="text-[#6B8E23] text-xl font-bold mb-4">Our mission</h2>
-                    <p class="text-gray-700">
-                        Our mission is to provide the freshest, sustainably grown produce while supporting local agriculture. We are committed to delivering healthy, high-quality fruits and vegetables that nourish both our community and the environment.
-                    </p>
-                </div>
-                
-                <!-- Our Vision -->
-                <div>
-                    <h2 class="text-[#6B8E23] text-xl font-bold mb-4">Our vision</h2>
-                    <p class="text-gray-700">
-                        To be a leading provider of fresh, organic produce, promoting sustainable farming practices and fostering healthier communities. We envision a world where everyone has access to nutritious, farm-to-table food, while protecting the environment for future generations.
-                    </p>
-                </div>
+
+    <!-- Call to Action -->
+    <section class="relative text-white text-center p-20" id="farm-products">
+        <div class="absolute inset-0 z-0">
+            <img src="Assets/images/call_to_action.png" alt="Fresh Farm Products" class="w-full h-full object-cover opacity-75" data-aos="fade-up" data-aos-duration="1000">
+        </div>
         
-                <!-- Why Choose Us -->
-                <div>
-                    <h2 class="text-[#6B8E23] text-xl font-bold mb-4">Why choose us</h2>
-                    <ul class="text-gray-700 space-y-4">
-                        <li class="flex items-center space-x-4">
-                            <img src="Assets/images/farm fresh.png" alt="Farm fresh produce" class="h-8">
-                            <span>Farm fresh produce</span>
-                        </li>
-                        <li class="flex items-center space-x-4">
-                            <img src="Assets/images/quality.png" alt="Premium organic quality" class="h-8">
-                            <span>Premium organic quality</span>
-                        </li>
-                        <li class="flex items-center space-x-4">
-                            <img src="Assets/images/natural.png" alt="100% natural produce" class="h-8">
-                            <span>100% natural produce</span>
-                        </li>
-                    </ul>
-                </div>
+        <!-- Green Overlay -->
+        <div class="absolute inset-0 bg-[#6B8E23] opacity-50 z-10"></div>
+
+        <div class="container mx-auto p-4 relative z-20">
+            <h2 class="text-3xl mb-4">Are you a lover of fresh farm products?</h2>
+            <p class="mb-8">You are in the right place, make your order today.</p>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Make my order today</button>
+        </div>
+    </section>
+    <!-- End Call to Action -->
+
+
+
+    <!-- mission section -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left px-4">
+            <!-- Our Mission -->
+            <div>
+                <h2 class="text-[#6B8E23] text-xl font-bold mb-4">Our mission</h2>
+                <p class="text-gray-700">
+                    Our mission is to provide the freshest, sustainably grown produce while supporting local agriculture. We are committed to delivering healthy, high-quality fruits and vegetables that nourish both our community and the environment.
+                </p>
             </div>
-        </section>
-        <!-- End mission section-->
+            
+            <!-- Our Vision -->
+            <div>
+                <h2 class="text-[#6B8E23] text-xl font-bold mb-4">Our vision</h2>
+                <p class="text-gray-700">
+                    To be a leading provider of fresh, organic produce, promoting sustainable farming practices and fostering healthier communities. We envision a world where everyone has access to nutritious, farm-to-table food, while protecting the environment for future generations.
+                </p>
+            </div>
+    
+            <!-- Why Choose Us -->
+            <div>
+                <h2 class="text-[#6B8E23] text-xl font-bold mb-4">Why choose us</h2>
+                <ul class="text-gray-700 space-y-4">
+                    <li class="flex items-center space-x-4">
+                        <img src="Assets/images/farm fresh.png" alt="Farm fresh produce" class="h-8">
+                        <span>Farm fresh produce</span>
+                    </li>
+                    <li class="flex items-center space-x-4">
+                        <img src="Assets/images/quality.png" alt="Premium organic quality" class="h-8">
+                        <span>Premium organic quality</span>
+                    </li>
+                    <li class="flex items-center space-x-4">
+                        <img src="Assets/images/natural.png" alt="100% natural produce" class="h-8">
+                        <span>100% natural produce</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- End mission section-->
 
     <!-- footer  -->
     <footer class="bg-[#313131] text-white py-8 px-4 md:px-12 lg:px-24 xl:px-36">
@@ -259,5 +280,10 @@
     </footer>
     <!-- End footer -->
 
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
