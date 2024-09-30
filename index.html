@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rayhudson Nature's Bounty</title>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="Assets/css/styles.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rayhudson Nature's Bounty</title>
+        
+        <!-- SEO Meta Tags -->
+        <meta name="description" content="Rayhudson Nature's Bounty offers the freshest organic produce straight from our fields to your table, committed to sustainable farming and local agriculture.">
+        <meta name="keywords" content="Organic Produce, Sustainable Farming, Local Agriculture, Fresh Fruits, Fresh Vegetables, Rayhudson">
+        <meta name="author" content="Rayhudson Nature's Bounty">
+        
+        <!-- Open Graph Tags -->
+        <meta property="og:title" content="Rayhudson Nature's Bounty">
+        <meta property="og:description" content="Delivering the freshest organic produce straight from our fields to your table.">
+        <meta property="og:image" content="Assets/images/logo 2.png"> 
+        <meta property="og:url" content="#"> <!-- TODO: Replace with ACTUAL URL --> 
+        
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="Assets/images/logo 2.png"> 
+    
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="Assets/css/styles.css">
+    </head>
+    
 <body class="bg-gray-100">
 
     <!-- Top bar -->
@@ -19,36 +35,37 @@
 
     <!-- Navigation -->
     <nav class="bg-white shadow-lg py-4">
-        <div class="container mx-auto flex justify-between items-center px-4">
-            <div class="flex items-center">
+        <div class="container mx-auto flex justify-center items-center px-4">
+            <div class="flex items-center space-x-6">
                 <a href="#">
                     <img src="Assets/images/logo one.png" alt="Rayhudson Logo" class="h-12">
                 </a>
+                <ul id="menu" class="hidden md:flex space-x-6 text-gray-700">
+                    <li><a href="#" class="hover:text-[#6B8E23]">Home</a></li>
+                    <li><a href="#" class="hover:text-[#6B8E23]">About us</a></li>
+                    <li><a href="#" class="hover:text-[#6B8E23]">Our services</a></li>
+                    <li><a href="#" class="hover:text-[#6B8E23]">Our mission</a></li>
+                    <li><a href="#" class="hover:text-[#6B8E23]">Contact us</a></li>
+                </ul>
             </div>
-            <div class="md:hidden">
+
+            <div class="md:hidden ml-auto">
                 <button id="menu-button" class="text-gray-700 focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                     </svg>
                 </button>
             </div>
-            <ul id="menu" class="hidden md:flex space-x-6 text-gray-700 flex-grow justify-center">
-                <li><a href="#" class="hover:text-green-700">Home</a></li>
-                <li><a href="#" class="hover:text-green-700">About us</a></li>
-                <li><a href="#" class="hover:text-green-700">Our services</a></li>
-                <li><a href="#" class="hover:text-green-700">Our mission</a></li>
-                <li><a href="#" class="hover:text-green-700">Contact us</a></li>
-            </ul>
         </div>
 
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white mt-2">
             <ul class="flex flex-col space-y-4 text-gray-700 px-4 py-2">
-                <li><a href="#" class="hover:text-green-700">Home</a></li>
-                <li><a href="#" class="hover:text-green-700">About us</a></li>
-                <li><a href="#" class="hover:text-green-700">Our services</a></li>
-                <li><a href="#" class="hover:text-green-700">Our mission</a></li>
-                <li><a href="#" class="hover:text-green-700">Contact us</a></li>
+                <li><a href="#" class="hover:text-[#6B8E23]">Home</a></li>
+                <li><a href="#" class="hover:text-[#6B8E23]">About us</a></li>
+                <li><a href="#" class="hover:text-[#6B8E23]">Our services</a></li>
+                <li><a href="#" class="hover:text-[#6B8E23]">Our mission</a></li>
+                <li><a href="#" class="hover:text-[#6B8E23]">Contact us</a></li>
             </ul>
         </div>
     </nav>
@@ -80,33 +97,33 @@
     </header>
 
 
-<!-- About Us Section -->
-<section class="bg-white py-12 relative">
-    <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold mb-8 text-center">About us</h2>
-    </div>
+    <!-- About Us Section -->
+    <section class="bg-white py-12 relative">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">About us</h2>
+        </div>
 
-    <div class="bg-[#6B8E23] py-16 pb-4 relative z-0"> 
-        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
-            <div class="md:w-1/2 relative mb-8 md:mb-0 flex justify-center">
-                <img src="Assets/images/ceo.png" alt="CEO" class="w-full h-full max-h-[500px] object-cover mx-auto relative z-10 -mt-32 transform scale-105">
-            </div>
+        <div class="bg-[#6B8E23] py-16 pb-4 relative z-0"> 
+            <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 relative mb-8 md:mb-0 flex justify-center">
+                    <img src="Assets/images/ceo.png" alt="CEO" class="w-full h-full max-h-[500px] object-cover mx-auto relative z-10 -mt-32 transform scale-105">
+                </div>
 
-            <!-- About Us Text -->
-            <div class="md:w-1/2 text-center md:text-left text-white">
-                <div class="flex items-start">
-                    <i class="fas fa-quote-left text-white text-6xl mr-4"></i>
-                    <blockquote class="text-lg mb-4">
-                        "At Rayhudson nature’s bounty, we deliver the freshest organic produce straight from our fields to your table. Committed to sustainable farming, we prioritize quality and flavor while supporting local agriculture. Join us in enjoying the true taste of nature!"
-                        <br>
-                        <br>
-                        <span class="font-bold"> NOURADDIN AMI, CEO and Founder</span>
-                    </blockquote>
+                <!-- About Us Text -->
+                <div class="md:w-1/2 text-center md:text-left text-white">
+                    <div class="flex items-start">
+                        <i class="fas fa-quote-left text-white text-6xl mr-4"></i>
+                        <blockquote class="text-lg mb-4">
+                            "At Rayhudson nature’s bounty, we deliver the freshest organic produce straight from our fields to your table. Committed to sustainable farming, we prioritize quality and flavor while supporting local agriculture. Join us in enjoying the true taste of nature!"
+                            <br>
+                            <br>
+                            <span class="font-bold"> NOURADDIN AMI, CEO and Founder</span>
+                        </blockquote>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Farm Produce Section -->
     <section class="py-12 bg-gray-100">
@@ -222,13 +239,11 @@
     </section>
     <!-- End Call to Action -->
 
-
-
-    <!-- mission section -->
+    <!-- Mission Section -->
     <section class="py-12 bg-gray-100">
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left px-4">
             <!-- Our Mission -->
-            <div>
+            <div class="flex flex-col items-center md:items-start">
                 <h2 class="text-[#6B8E23] text-xl font-bold mb-4">Our mission</h2>
                 <p class="text-gray-700">
                     Our mission is to provide the freshest, sustainably grown produce while supporting local agriculture. We are committed to delivering healthy, high-quality fruits and vegetables that nourish both our community and the environment.
@@ -236,15 +251,15 @@
             </div>
             
             <!-- Our Vision -->
-            <div>
+            <div class="flex flex-col items-center md:items-start">
                 <h2 class="text-[#6B8E23] text-xl font-bold mb-4">Our vision</h2>
                 <p class="text-gray-700">
                     To be a leading provider of fresh, organic produce, promoting sustainable farming practices and fostering healthier communities. We envision a world where everyone has access to nutritious, farm-to-table food, while protecting the environment for future generations.
                 </p>
             </div>
-    
+
             <!-- Why Choose Us -->
-            <div>
+            <div class="flex flex-col items-center md:items-start">
                 <h2 class="text-[#6B8E23] text-xl font-bold mb-4">Why choose us</h2>
                 <ul class="text-gray-700 space-y-4">
                     <li class="flex items-center space-x-4">
@@ -263,12 +278,13 @@
             </div>
         </div>
     </section>
-    <!-- End mission section-->
+    <!-- End Mission Section -->
 
-    <!-- footer  -->
+
+    <!-- Footer -->
     <footer class="bg-[#313131] text-white py-8 px-4 md:px-12 lg:px-24 xl:px-36">
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
+            <div class="flex flex-col items-center md:items-start">
                 <h3 class="text-xl font-semibold text-[#6B8E23] mb-4">Rayhudson<br /><span class="text-white text-sm">Nature's Bounty</span></h3>
                 <p class="text-white">
                     Delivers the freshest, sustainably grown produce straight from our
@@ -278,7 +294,7 @@
                     sustainability.
                 </p>
             </div>
-            <div>
+            <div class="flex flex-col items-center md:items-start">
                 <h3 class="text-xl font-semibold text-[#6B8E23] mb-4">Our contacts</h3>
                 <p class="mb-2">
                     <span class="text-white">Telephone No:</span> <a href="tel:+447936849926" class="text-[#6B8E23] hover:underline">+447936849926</a>
@@ -289,7 +305,7 @@
                     London W6 7DL
                 </p>
             </div>
-            <div>
+            <div class="flex flex-col items-center md:items-start">
                 <h3 class="text-xl font-semibold text-[#6B8E23] mb-4">Quick Links</h3>
                 <ul class="space-y-2">
                     <li><a href="#" class="text-white hover:text-[#6B8E23]">Home</a></li>
@@ -305,9 +321,7 @@
             <p class="text-white text-xs">Developed by: <a href="#" class="text-[#6B8E23] hover:underline">Quick Office 20</a></p>
         </div>
     </footer>
-    <!-- End footer -->
-
-
+    <!-- End Footer -->
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="Assets/js/main.js"></script>
