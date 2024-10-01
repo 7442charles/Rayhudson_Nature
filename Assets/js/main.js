@@ -14,8 +14,8 @@ var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     loop: true,
     autoplay: {
-        delay: 3000,  // Time in milliseconds to wait before changing slides
-        disableOnInteraction: false,  // Allow user interaction to not stop autoplay
+        delay: 5000,  
+        disableOnInteraction: false,  
     },
     navigation: {
         nextEl: ".swiper-button-next",
