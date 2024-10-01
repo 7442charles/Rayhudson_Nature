@@ -20,6 +20,7 @@
         <link rel="icon" type="image/png" href="Assets/images/logo 2.png"> 
     
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <script src="https://cdn.tailwindcss.com"></script>
@@ -97,33 +98,70 @@
     </header>
 
 
-    <!-- About Us Section -->
-    <section class="bg-white py-12 relative">
+<!-- About Us Section -->
+<section class="bg-white relative">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-4 text-center">About us</h2>
+    </div>
+
+    <div class="bg-[#6B8E23] py-5 pb-4 relative z-0"> 
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8 text-center">About us</h2>
-        </div>
+            <div class="swiper mySwiper relative">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-1/2 relative mb-4 md:mb-0 flex justify-center"> 
+                                <img src="Assets/images/ceo_two.png" alt="CEO" class="w-full h-auto max-h-[500px] object-cover mx-auto"> 
+                            </div>
+                            <div class="md:w-1/2 text-center md:text-left text-white">
+                                <div class="flex items-start">
+                                    <i class="fas fa-quote-left text-white text-6xl mr-4"></i>
+                                    <blockquote class="text-lg mb-2"> 
+                                        "At Rayhudson nature’s bounty, we deliver the freshest organic produce straight from our fields to your table. Committed to sustainable farming, we prioritize quality and flavor while supporting local agriculture. Join us in enjoying the true taste of nature!"
+                                        <br><br>
+                                        <span class="font-bold">NOURADDIN AMI, CEO and Founder</span>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="bg-[#6B8E23] py-16 pb-4 relative z-0"> 
-            <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 relative mb-8 md:mb-0 flex justify-center">
-                    <img src="Assets/images/ceo.png" alt="CEO" class="w-full h-full max-h-[500px] object-cover mx-auto relative z-10 -mt-32 transform scale-105">
-                </div>
-
-                <!-- About Us Text -->
-                <div class="md:w-1/2 text-center md:text-left text-white">
-                    <div class="flex items-start">
-                        <i class="fas fa-quote-left text-white text-6xl mr-4"></i>
-                        <blockquote class="text-lg mb-4">
-                            "At Rayhudson nature’s bounty, we deliver the freshest organic produce straight from our fields to your table. Committed to sustainable farming, we prioritize quality and flavor while supporting local agriculture. Join us in enjoying the true taste of nature!"
-                            <br>
-                            <br>
-                            <span class="font-bold"> NOURADDIN AMI, CEO and Founder</span>
-                        </blockquote>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-1/2 relative mb-4 md:mb-0 flex justify-center"> 
+                                <img src="Assets/images/izoo.png" alt="Manager" class="w-full h-auto max-h-[500px] object-cover mx-auto"> 
+                            </div>
+                            <div class="md:w-1/2 text-center md:text-left text-white">
+                                <div class="flex items-start">
+                                    <i class="fas fa-quote-left text-white text-6xl mr-4"></i>
+                                    <blockquote class="text-lg mb-2"> 
+                                        "As Operations Manager, I prioritize efficiency and teamwork to deliver exceptional service. Our goal is to build lasting relationships with clients while continuously improving our processes and outcomes."
+                                        <br><br>
+                                        <span class="font-bold">Isaach Muteru, Operations Manager</span>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Carousel navigation buttons -->
+                <div class="swiper-button-next text-white"></div> 
+                <div class="swiper-button-prev text-white"></div> 
+
+                <!-- Carousel pagination (indicators)
+                <div class="swiper-pagination"></div> -->
             </div>
         </div>
-    </section>
+    </div>
+</section>
+<!-- End About Us Section -->
+
+
+
+
 
     <!-- Farm Produce Section -->
     <section class="py-12 bg-gray-100">
@@ -239,6 +277,38 @@
     </section>
     <!-- End Call to Action -->
 
+    <!-- shipment Area -->
+    <section class="max-w-7xl mx-auto p-8 bg-white shadow-md rounded-lg">
+        <h2 class="text-center text-xl font-semibold mb-6">Shipment available for these countries</h2>
+        
+        <div class="flex flex-wrap justify-center items-center gap-10">
+          <!-- Singapore -->
+          <div class="flex flex-col items-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Singapore.svg" alt="Singapore Flag" class="w-24 h-auto mb-3">
+            <span class="text-base">Singapore</span>
+          </div>
+          
+          <!-- Korea -->
+          <div class="flex flex-col items-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg" alt="Korea Flag" class="w-24 h-auto mb-3">
+            <span class="text-base">Korea</span>
+          </div>
+          
+          <!-- China -->
+          <div class="flex flex-col items-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg" alt="China Flag" class="w-24 h-auto mb-3">
+            <span class="text-base">China</span>
+          </div>
+          
+          <!-- Europe -->
+          <div class="flex flex-col items-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" alt="Europe Flag" class="w-24 h-auto mb-3">
+            <span class="text-base">Europe</span>
+          </div>
+        </div>
+    </section>
+    <!-- End Shipment section -->
+
     <!-- Mission Section -->
     <section class="py-12 bg-gray-100">
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left px-4">
@@ -325,6 +395,9 @@
     </footer>
     <!-- End Footer -->
 
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="Assets/js/main.js"></script>
 
