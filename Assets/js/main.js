@@ -1,7 +1,7 @@
 // init animate on scroll lib
 AOS.init(); 
 
-// nav baar mobile toggle
+// navbar mobile toggle
 const menuButton = document.getElementById('menu-button');
 const mobileMenu = document.getElementById('mobile-menu');
 
